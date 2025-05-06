@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Connection
-mongoose.connect('mongodb+srv://skargaming26:PlS5r4mpBfp3TYcn@skar.l6ajvq8.mongodb.net/?retryWrites=true&w=majority&appName=Skar')
+mongoose.connect('DBLink')
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('MongoDB connection error:', err));
 
